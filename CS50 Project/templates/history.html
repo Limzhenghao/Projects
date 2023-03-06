@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>Transaction amount</th>
+            <th>Transaction type</th>
+            <th>Date and time of transaction</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for transaction in transactions %}
+        <tr>
+            <td>{{ transaction.transaction_amount }}</td>
+            <td>{{ transaction.transaction_type }}</td>
+            <td>{{ transaction.date_time }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

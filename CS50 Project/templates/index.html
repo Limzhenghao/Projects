@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Main page
+{% endblock %}
+
+{% block main %}
+<style>
+    .chartBox {
+        width: 700px;
+        height: 700px;
+        padding-bottom: 10px;
+        float: left;
+    }
+</style>
+    <!-- Doughnut chart-->
+    <div class="chartBox">
+        <canvas class="chart" id="myChart"></canvas>
+    </div>
+    <div>Needs</div>
+    <input type="number" placeholder="Needs" id="value1">
+    <div>Wants</div>
+    <input type="number" placeholder="Wants" id="value2">
+    <div>Savings</div>
+    <input type="number" placeholder="Savings" id="value3">
+    <p><button id="updateChart">Update</button></p>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.min.js"></script>
+
+    <script>
+        // setup block
+        const data1 = 50;
+        const data2 = 30;
+        const data3 = 20;
+        const data = {
+            labels: ['Needs', 'Wants', 'Savings'],
+            datasets: [{ // Index 0 of dataset
+            label: 'Amount of money',
+            backgroundColor: ['#f1c40f', '#e67e22', '#16a085'],
+            data: [data1, data2, data3]
+            }]
+        };
+
+        // config block
+        const config = {
+            type: "doughnut",
+            data,
+            options: {},
+        };
+
+        // render/init block
+        const myChart = new Chart (
+            document.getElementById("myChart"),
+            config
+        );
+
+        // Set values of chart to be default values first
+        const value1 = document.getElementById('value1');
+        const value2 = document.getElementById('value2');
+        const value3 = document.getElementById('value3');
+        value1.value = data1;
+        value2.value = data2;
+        value3.value = data3;
+
+        // When update button clicked, will update values according to user input
+        const updateChart = document.getElementById('updateChart');
+        updateChart.addEventListener('click', updateDoughnutChart);
+
+        function updateDoughnutChart(){
+        myChart.data.datasets[0].data[0] = value1.value;
+        myChart.data.datasets[0].data[1] = value2.value;
+        myChart.data.datasets[0].data[2] = value3.value;
+        myChart.update();
+        }
+    </script>
+{% endblock %}

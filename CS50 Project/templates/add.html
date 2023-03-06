@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add budget
+{% endblock %}
+
+{% block main %}
+<p>Here you can add transactions and you can view them at the history page to be able to gauge how much you are spending.</p>
+    <form action="/add" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="transaction" placeholder="Transaction amount" type="number">
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="transaction_type" placeholder="Transaction type" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Add transaction</button>
+    </form>
+{% endblock %}
