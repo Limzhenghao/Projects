@@ -1,0 +1,1 @@
+This is my first project for the course 100 Days Of Code - 2023 Web Development Bootcamp. It features a webpage for my code challenge for the day as well as the challenges for the whole week. It also has a seperate webpage with the summary of HTML and CSS basics and a link to a pdf with a more detailed summary.
