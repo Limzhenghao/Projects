@@ -1,0 +1,56 @@
+header {
+  position: static;
+  background-color: rgb(48, 48, 48);
+}
+
+#page-logo a {
+  color: rgb(167, 90, 190);
+}
+
+header a {
+  color: rgb(167, 90, 190);
+}
+
+header nav a:hover {
+  background-color: rgb(207, 171, 216);
+}
+
+#hero {
+  height: 900px;
+  text-align: center;
+  background-image: url(/images/places/pexels-pixabay-206359.jpg);
+  background-position: center;
+  background-size: cover;
+  color: rgb(221, 212, 212);
+}
+
+#hero-content {
+  width: 900px;
+  font-size: 24px;
+  background-color: rgba(51, 47, 47, 0.8);
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  border-radius: 8px;
+  text-align: center;
+  padding: 42px 0;
+  margin: 0 auto;
+  position: relative;
+  top: 200px;
+}
+
+#hero-content h2 {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+}
+
+#hero-content a {
+  color: rgb(221, 212, 212);
+  text-decoration: none;
+}
+
+#hero-content a:hover {
+  text-decoration: underline;
+  background-color: crimson;
+  padding: 10px;
+  border-radius: 6px;
+}
