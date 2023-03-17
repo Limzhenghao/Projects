@@ -1,0 +1,2 @@
+This is my 3rd project as part of the course 100 Days of Code - 2023 Web Development Bootcamp. This project is a small one, with just a small landing page which is responsive according to the width of the screen.
+When the width of the screen decreases enough, the website will turn into a mobile-friendly version with a icon at the top that allows you open a side drawer that contains clickable links, the same as the ones on the header when in the desktop view.
