@@ -1,0 +1,104 @@
+body {
+  background-color: rgb(240, 250, 253);
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem;
+}
+
+form {
+  width: 40rem;
+  margin: auto;
+  padding: 1rem;
+  background-color: rgb(217, 221, 223);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+main h2 {
+  margin: 0.5rem 0;
+}
+main ul {
+  padding: 0;
+}
+
+#personal-details {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0.5rem 0;
+}
+
+label {
+  margin: 0.2rem;
+  color: rgb(50, 64, 90);
+  display: block;
+  font-weight: bold;
+}
+
+input, textarea, select {
+    font: inherit;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+    background-color: rgb(220, 223, 230);
+}
+
+input {
+    border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+}
+
+li select {
+  height: 1.4rem;
+}
+
+.form-control-inline {
+  display: flex;
+}
+
+.form-control-inline input {
+  margin-right: 0.4rem;
+}
+
+#checkbox-control-inline {
+  display: flex;
+}
+
+#button-control-inline {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#button-control-inline button {
+  display: block;
+  width: 4rem;
+  margin: 0.1rem;
+  padding: 0.2rem 0.3rem;
+  border-radius: 4px;
+}
+
+#clear-button {
+  border-color: rgb(136, 136, 155);
+  color: rgb(136, 136, 155);
+}
+
+#clear-button:hover {
+    color: rgb(24, 24, 141);
+}
+
+#submit-button {
+  color: white;
+  background-color: rgb(136, 136, 155);
+}
+
+#submit-button:hover {
+    background-color: rgb(79, 79, 172);
+}

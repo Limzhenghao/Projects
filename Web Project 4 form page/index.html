@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="index.html" method="GET">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul id="personal-details">
+            <li>
+              <label for="username">Your name</label>
+              <input
+                type="text"
+                id="username"
+                name="user-name"
+                required
+                placeholder="Bob Brown"
+              />
+            </li>
+            <li>
+              <label for="useremail">Your E-Mail Address</label>
+              <input
+                type="email"
+                id="useremail"
+                name="user-email"
+                required
+                placeholder="Bob@gmail.com"
+              />
+            </li>
+            <li>
+              <label for="usernumber">Your Phone Number</label>
+              <input
+                type="tel"
+                id="usernumber"
+                name="user-number"
+                required
+                minlength="5"
+                placeholder="1234 5678"
+              />
+            </li>
+            <li>
+              <label for="usermessage">Your Message</label>
+              <textarea
+                name="user-message"
+                id="usermessage"
+                cols="30"
+                rows="8"
+                required
+                minlength="10"
+                maxlength="200"
+              ></textarea>
+            </li>
+            <li>
+              <label for="userfind">How did you find us?</label>
+              <select name="user-find" id="userfind" required>
+                <option value="web">Web Search</option>
+                <option value="word-of-mouth">Word of mouth</option>
+                <option value="other">Other</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+        <section id="contact">
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                id="reply-phone"
+                name="reply"
+                value="phone"
+                required
+              />
+              <label for="reply-phone">Call me</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                id="reply-email"
+                name="reply"
+                value="email"
+                required
+              />
+              <label for="reply-email">Send me an email</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                id="reply-none"
+                name="reply"
+                value="none"
+                required
+              />
+              <label for="reply-none">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+        <section id="checkbox-control-inline">
+          <input type="checkbox" id="accept" name="accept-terms" required />
+          <label for="accept">Accept Terms</label>
+        </section>
+        <section id="button-control-inline">
+          <button id="clear-button" type="reset">Clear</button>
+          <button id="submit-button" type="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
