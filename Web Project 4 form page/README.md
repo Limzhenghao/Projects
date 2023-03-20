@@ -1,0 +1,1 @@
+This is my 4th project as part of the course 100 Days of Code - 2023 Web Development Bootcamp. This is a simple form page which consists of different types of input tags such as text, tel, email, checkbox and radio as well as textarea and select tags.
