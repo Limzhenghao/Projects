@@ -1,0 +1,112 @@
+body {
+    text-align: center;
+    font-family: 'Open-Sans', sans-serif;
+    margin: 0;
+    background-color: rgb(247, 239, 247);
+}
+
+#backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header {
+    background-color: rgb(140, 0, 255);
+}
+
+h1 {
+    margin: 0;
+    padding: 1.5rem;
+    color: rgb(239, 234, 234);
+}
+
+header p {
+    margin: 0;
+    padding: 0.5rem 0 3rem 0;
+    color: rgb(239, 234, 234);
+}
+
+.valid-name {
+    display: none;
+}
+
+.invalid-name {
+    display: block;
+}
+
+.invalid-name2 {
+    background-color: rgb(219, 40, 40);
+}
+
+ol {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: rgb(140, 0, 255);
+    margin: 1rem 1rem;
+    padding: 1rem 3rem;
+    width: 20%;
+}
+
+.game-symbol {
+    font-size: 2rem;
+}
+
+.input-player {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 5%;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: white;
+}
+
+section h3 {
+    display: none;
+}
+
+#player-turn-message {
+    display: none;
+}
+
+#cell-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(173, 140, 173);
+}
+
+.player-1-class {
+    width: 2rem;
+    height: 2rem;
+    background-color: blueviolet;
+}
+
+.player-1-class::before {
+    content: 'X';
+}
+
+.player-2-class {
+    width: 2rem;
+    height: 2rem;
+    background-color: blueviolet;
+}
+
+.player-2-class::before {
+    content: 'O';
+}
