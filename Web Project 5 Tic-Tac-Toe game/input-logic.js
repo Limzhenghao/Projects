@@ -60,7 +60,7 @@ function savePlayerInfo(event) {
     // Prevent page refresh and process data first before sending
     event.preventDefault();
 
-    // Stores all form data in const
+    // Extract values entered into inputs automatically
     const formData = new FormData(event.target);
 
     // Access form data by its 'name' attribute and get rid of all spaces inside
