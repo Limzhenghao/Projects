@@ -1,0 +1,10 @@
+<li class="product-list-item">
+    <article>
+        <img src="<%= product.imageUrl %>" alt="<%= product.name %>">
+        <h3><%= product.name %></h3>
+        <div>
+            <a href="/admin/products/<%= product.id %>">View & Edit</a>
+            <button class="btn-btn-alt" data-productid="<%= product.id %>" data-csrf="<%= locals.csrfToken %>">Delete</button>
+        </div>
+    </article>
+</li>
