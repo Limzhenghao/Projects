@@ -1,0 +1,17 @@
+#signup {
+    margin: 0 auto 0 auto;
+    text-align: center;
+    color: grey;
+}
+
+#signup-hr {
+    width: 91%;
+}
+
+#auth-alternative {
+    margin: 0.5rem;
+}
+
+#input-error {
+    color: rgb(245, 63, 63);
+}

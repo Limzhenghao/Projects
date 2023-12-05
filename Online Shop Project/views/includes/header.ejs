@@ -1,0 +1,31 @@
+<header id="main-header">
+    <nav>
+        <li id="home-btn"><a href="/">Shopmania</a></li>
+      <ul>
+        <% if (!locals.isAdmin) { %>
+          <li><a href="/">Shop</a></li>
+          <li><a href="/cart">Cart</a></li>
+        <% } %>
+        <% if (!locals.isAuth) { %>
+            <li><a href="/signup">Signup</a></li>
+            <li><a href="/login">Login</a></li>
+        <% } %>
+        <% if (locals.isAuth && !locals.isAdmin) { %>
+            <li><a href="/orders">Orders</a></li>
+        <% } %>
+        <% if (locals.isAdmin) { %>
+            <li><a href="/admin/products">Manage Products</a></li>
+            <li><a href="/admin/orders">Manage Orders</a></li>
+        <% } %>
+        <% if (locals.isAuth) { %>
+            <li>
+                <form action="/logout" method="POST">
+                    <input type="hidden" value="<%= locals.csrfToken %>" name="_csrf">
+                    <button class="btn-btn-alt">Logout</button>
+                </form>
+            </li>
+        <% } %>
+      </ul>
+    </nav>
+    <hr>
+  </header>

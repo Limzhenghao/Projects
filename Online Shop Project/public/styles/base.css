@@ -1,0 +1,68 @@
+* {
+    /* width of any element accounts for all borders and padding */
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(30, 30, 30);
+    color: grey;
+}
+
+#main-header {
+    margin: 0 10rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-header ul {
+    margin: 0;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+}
+
+#home-btn {
+    list-style-type: none;
+    padding: 1rem 2rem;
+}
+
+li {
+    padding: 1.5rem;
+}
+
+a {
+    color: rgb(253, 175, 3);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+hr {
+    border: 1px solid rgb(253, 170, 3);
+}
+
+.btn {
+    margin: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    color: rgb(245, 243, 243);
+    background-color: rgb(253, 170, 3);
+    border: 1px solid rgb(253, 170, 3);
+    border-radius: 5px;
+}
+
+.btn-btn-alt {
+    color: rgb(253, 170, 3);
+    background-color: rgb(30, 30, 30);
+    border: none;
+    font-size: 1.5rem;
+}

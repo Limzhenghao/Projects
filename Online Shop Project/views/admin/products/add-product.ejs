@@ -1,0 +1,42 @@
+<%- include('../../includes/head.ejs', { title: 'All Products ( Admin View )'}) %>
+<link rel="stylesheet" href="/styles/base.css">
+<link rel="stylesheet" href="/styles/forms.css">
+<link rel="stylesheet" href="/styles/products.css">
+
+<body>
+    <%- include('../../includes/header.ejs') %>
+    <main id="add-product-page">
+        <h1 id="h1">Add new product</h1>
+        <div class="auth-form">
+              <!-- enctype="multipart/form-data" required-->
+              <!-- CSRF Token injection in action instead of hidden input field as enctype makes it not work-->
+            <form action="/admin/products/new?_csrf=<%= locals.csrfToken %>" method="POST" enctype="multipart/form-data">
+                <div class="form-control">
+                    <label for="text">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-control">
+                    <label for="summary">Summary</label>
+                    <input type="text" id="summary" name="summary" maxlength="250" required>
+                </div>
+                <div class="form-control">
+                    <label for="price">Price</label>
+                    <input type="number" id="price" name="price" min="0.01" step="0.01" required>
+                </div>
+                <div class="form-control">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" rows="7" required></textarea>
+                </div>
+                <div class="form-control">
+                    <label for="image">Image</label>
+                    <input type="file" id="image" name="image" required accept="image/*">
+                </div>
+                <div id="btn-group">
+                    <button class="btn">Save</button>
+                    <button class="btn-btn-alt" type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

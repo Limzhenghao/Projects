@@ -1,0 +1,27 @@
+.auth-form {
+    height: auto;
+    width: 20rem;
+    margin: 0 auto 0 auto;
+    padding: 1rem 0.5rem;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin: 0.7rem;
+    text-align: center;
+}
+
+.form-control input {
+    height: 1.5rem;
+    width: 15rem;
+    margin: 0.1rem;
+}
+

@@ -1,0 +1,41 @@
+/* All Products CSS */
+
+#products-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 2rem;
+}
+
+.product-list-item {
+    list-style: none;
+    background-color: rgb(24, 24, 24);
+    text-align: center;
+}
+
+.product-list-item img{
+    height: 10rem;
+    width: 100%;
+    object-fit: contain;
+}
+
+.product-list-item button {
+    font-size: 1rem;
+}
+
+.product-list-item a {
+    font-size: 1rem;
+}
+
+/* Add new product page CSS */
+
+textarea {
+    resize: none;
+}
+
+#add-product-page h1 {
+    text-align: center;
+}
+
+#btn-group {
+    text-align: center;
+}

@@ -1,0 +1,16 @@
+<%- include('../../includes/head.ejs', { title: 'Product detail'}) %>
+<link rel="stylesheet" href="/styles/base.css">
+<link rel="stylesheet" href="/styles/forms.css">
+<link rel="stylesheet" href="/styles/products.css">
+
+<body>
+    <%- include('../../includes/header.ejs') %>
+    <main>
+        <h1><%= product.name %></h1>
+        <p><%= product.summary %></p>
+        <img src="<%= product.imageUrl %>" alt="<%= product.name %>">
+        <p><%= product.description %></p>
+        <h2><%= product.price %></h2>
+        <a href="/admin/products/<%= product.id %>/edit">Edit</a>
+    </main>
+</body>
